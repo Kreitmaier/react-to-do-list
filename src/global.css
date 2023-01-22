@@ -12,9 +12,14 @@
     --purple-dark: #5E60CE;
 
     --blue: #4EA8DE;
-    --blue-dark: #4EA8DE;
+    --blue-dark: #1E6F9F;    ;
 
     --danger: #E25858;
+}
+
+:focus {
+    outline: transparent;
+    box-shadow: 0 0 0 2px var(--gray-300);
 }
 
 * {
