@@ -78,6 +78,12 @@
 
 }
 
+.taskItemWrapper input[type=checkbox]:checked label {
+    color: blueviolet;
+}
+
+
+
 
 
 

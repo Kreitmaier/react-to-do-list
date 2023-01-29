@@ -79,7 +79,7 @@
     border-radius: 999px;
 }
 
-.taskListWrapperNotContent {
+.taskListWrapper {
     margin-top: 1.5rem;
     border-top: 1px solid var(--gray-400);
     border-radius: 8px;  
@@ -89,9 +89,6 @@
     flex-direction: column;
     align-items: center;
     padding: 4rem 1.5rem;
-    
 }
 
-.taskListWrapperNotContent > img {
-    margin-bottom: 1rem;
-}
+
