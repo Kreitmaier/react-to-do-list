@@ -29,7 +29,7 @@ export function TaskCard({ taskId, isDone, content, onDeleteTask, onDoneTask }: 
                     <label htmlFor={taskId}>{content}</label>
                 </div>
                 <button title='Deletar tarefa' onClick={handleDeleteTask}>
-                    <Trash size={20} />
+                    <Trash size={16} />
                 </button>
             </div>
     )

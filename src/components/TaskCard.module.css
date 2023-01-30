@@ -4,7 +4,6 @@
     padding: 1rem;
     border: 1px solid var(--gray-400);
     border-radius: 8px;
-
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -16,34 +15,49 @@
     color: var(--gray-300);
     cursor: pointer;
     line-height: 0;
+    padding: 0.25rem;
     border-radius: 2px;
+}
+
+.taskCardWrapper button:hover {
+    background: var(--gray-400);
+    color: var(--danger);
+    border-radius: 4px;
+    padding: 0.25rem;
 }
 
 .taskItemWrapper {
     color: var(--gray-100);
     font-size: 0.875rem;
-
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 0.75rem;
 }
 
 .taskItemWrapper input[type=checkbox] {
     appearance: none;  
-
     flex-shrink: 0;
-        
     width: 1.090625rem;
     height: 1.090625rem;
     border-radius: 50%;
     border: 0.125rem solid var(--blue);
     position: relative;
+    transition: 0.1s;
+}
+
+.taskItemWrapper input[type=checkbox]:hover:checked  {
+    background: var(--purple);
+    border: 0.125rem solid var(--purple);  
+}
+
+.taskItemWrapper input[type=checkbox]:hover  {
+    background: rgba(30, 111, 159, 0.2);
+    border: 0.125rem solid var(--blue-dark);
 }
 
 .taskItemWrapper input[type=checkbox]:checked {
     appearance: none;    
-    
     background: var(--purple-dark);
     width: 1.090625rem;
     height: 1.090625rem;
@@ -52,35 +66,32 @@
     position: relative;    
 }
 
+.taskItemWrapper input[type=checkbox]:checked ~ label {
+    color: var(--gray-300);
+    text-decoration-line: line-through;
+}
+
 .taskItemWrapper input[type=checkbox]::before {
     content: "";
     position: absolute;
     color: var(--gray-100);
-     
     width: 0.456875rem;
     height: 0.293125rem;
     border-bottom: 0.125rem solid var(--gray-100);
     border-left: 0.125rem solid var(--gray-100);
     transform: rotate(-45deg);
-    
     left: 0.13rem;
     top: 0.13rem;
     right: 0.13rem;
     bottom: 0.13rem;
-    
-     
     opacity: 0;
     transition: 0.1s;
 }
 
 .taskItemWrapper input[type=checkbox]:checked:before {
     opacity: 1;
-
 }
 
-.taskItemWrapper input[type=checkbox]:checked label {
-    color: blueviolet;
-}
 
 
 
