@@ -3,7 +3,6 @@ import { ChangeEvent } from "react";
 
 import styles from "./TaskCard.module.css";
 
-
 interface CardContent {
     taskId: string;
     content: string;

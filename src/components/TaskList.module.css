@@ -25,7 +25,7 @@
      display: flex;
      align-items: center;
      justify-content: center;
-     gap: 8px;
+     gap: 0.5rem;
  
      background: var(--blue-dark);
      color: var(--gray-100);
@@ -51,9 +51,10 @@
 .createdTasks {
     color: var(--blue);
     font-size: 0.875rem;
+
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 0.5rem;
 }
 
 .countCreatedTasks {
@@ -66,9 +67,10 @@
 .doneTasks {
     color: var(--purple);
     font-size: 0.875rem;
+
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 0.5rem;
 }
 
 .countDoneTasks {
@@ -80,6 +82,7 @@
 
 .taskListWrapper {
     margin-top: 1.5rem;
+    
     display: flex;
     flex-direction: column;
     gap: 0.75rem;

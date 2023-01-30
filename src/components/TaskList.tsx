@@ -2,10 +2,10 @@ import { ChangeEvent, FormEvent, InvalidEvent, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 
 import { TaskCard } from "./TaskCard";
-import TaskListNotContent from "./TaskListNotContent";
+import { TaskListNotContent } from "./TaskListNotContent";
+import { PlusCircle } from "phosphor-react";
 
 import styles from "./TaskList.module.css";
-import { PlusCircle } from "phosphor-react";
 
 interface Task {
     id: string;
@@ -18,7 +18,6 @@ export function TaskList(){
     const [newTask, setNewTask] = useState('');
     const [countDoneTasks, setCountDoneTasks] = useState(0);
     
-
     function handleCreateNewTask(event: FormEvent) {
         event.preventDefault();
 
@@ -55,31 +54,30 @@ export function TaskList(){
             }
         }, 0);
 
-        setCountDoneTasks(qtdDoneTasks);
-        
+        setCountDoneTasks(qtdDoneTasks);  
     }
 
-    function doneTask(taskId:string, isChecked: boolean) {
+    function doneTask(taskToDone:string, isChecked: boolean) {
         if (isChecked) {
             const task = tasks.find(task => {
-                return task.id === taskId
+                return task.id === taskToDone
             });
 
-            const updatedTask = Object.assign({}, task, {
+            const updatedTaskToDone = Object.assign({}, task, {
                 isDone: true
             });
 
-            const taskIndex = tasks.findIndex(task => task.id === taskId);
+            const taskIndexToDone = tasks.findIndex(task => task.id === taskToDone);
 
-            const updatedTasks = tasks.filter(task => {
-                return task.id !== taskId
-            })
+            const updateTasks = tasks.filter(task => {
+                return task.id !== taskToDone
+            });
 
-            updatedTasks.splice(taskIndex,0,updatedTask)
+            updateTasks.splice(taskIndexToDone,0,updatedTaskToDone);
+            
+            setTasks([...updateTasks]);
 
-            setTasks([...updatedTasks])
-
-            const qtdDoneTasks = updatedTasks.reduce((acc, task) => {
+            const qtdDoneTasks = updateTasks.reduce((acc, task) => {
                 if(task.isDone){
                     return acc = acc + 1;
                 }else{
@@ -91,24 +89,24 @@ export function TaskList(){
    
         }else {
             const task = tasks.find(task => {
-                return task.id === taskId
+                return task.id === taskToDone
             });
 
-            const updatedTask = Object.assign({}, task, {
+            const updatedTaskToDone = Object.assign({}, task, {
                 isDone: false
             });
 
-            const taskIndex = tasks.findIndex(task => task.id === taskId);
+            const taskIndexToDone = tasks.findIndex(task => task.id === taskToDone);
 
-            const updatedTasks = tasks.filter(task => {
-                return task.id !== taskId
-            })
+            const updateTasks = tasks.filter(task => {
+                return task.id !== taskToDone
+            });
 
-            updatedTasks.splice(taskIndex,0,updatedTask)
-
-            setTasks([...updatedTasks])
+            updateTasks.splice(taskIndexToDone,0,updatedTaskToDone);
             
-            const qtdDoneTasks = updatedTasks.reduce((acc, task) => {
+            setTasks([...updateTasks]);
+
+            const qtdDoneTasks = updateTasks.reduce((acc, task) => {
                 if(task.isDone){
                     return acc = acc + 1;
                 }else{
