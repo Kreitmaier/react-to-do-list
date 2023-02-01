@@ -143,7 +143,7 @@ export function TaskList(){
                 </div> 
                 <div className={styles.doneTasks}>
                     <p><strong>Concluídas</strong></p>
-                    <p className={styles.countDoneTasks}>{countDoneTasks}</p>
+                    <p className={styles.countDoneTasks}>{countDoneTasks} {countDoneTasks > 0 && <span>de {tasks.length}</span>} </p>
                 </div>
             </div>
             <div className={tasks.length > 0 ? styles.taskListWrapper : undefined }>

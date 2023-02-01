@@ -6,8 +6,9 @@
     border-radius: 8px;
 
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
+    gap: 0.75rem;
 }
 
 .taskCardWrapper button {
