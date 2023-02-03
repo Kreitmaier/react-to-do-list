@@ -5,7 +5,10 @@
 <img src="https://img.shields.io/badge/STATUS-CONCLU%C3%8DDO-green"/>
 </p>
 
-
+![preview](./src/assets/react-to-do-list.gif)
+<p align="center">
+🔗<a href="kreitmaier.github.io/react-to-do-list/">Acesse o projeto clicando aqui</a>
+</p>
 
 <p align="center">
  <a href="#"><img alt="GitHub language count" src="https://img.shields.io/github/languages/count/kreitmaier/react-to-do-list?color=%2304D361" /></a> 
@@ -30,10 +33,10 @@ O desafio consiste em desenvolver uma aplicação de controle de tarefas de acor
 
 ### 📝Features
 
-  - Adicionar uma tarefa;
-  - Marcar e desmarcar uma tarefa como concluída;
-  - Remover uma tarefa da listagem;
-  - Mostrar o progresso de conclusão das tarefas;
+- Adicionar uma tarefa;
+- Marcar e desmarcar uma tarefa como concluída;
+- Remover uma tarefa da listagem;
+- Mostrar o progresso de conclusão das tarefas;
 
 ## 🎨 Layout
 
@@ -47,7 +50,8 @@ O layout da aplicação está disponível no Figma:
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
   
-  <img alt="ToDoList" title="#ToDoList"  src="https://github.com/Kreitmaier/react-to-do-list/tree/main/src/assets/todoEmpty.svg" width="400px" />
+  <img alt="To Do List Empty" src="./src/assets/todoEmpty.svg" width="400px" />
+  <img alt="To Do List" src="./src/assets/todo.svg" width="400px" />
 
 </p>
 
@@ -88,17 +92,15 @@ $ npm install
 # Execute a aplicação em modo de desenvolvimento
 $ npm run dev
 
-# A aplicação será aberta na porta:3000 - acesse http://localhost:3000
+# A aplicação será aberta na porta:5173 - acesse http://localhost:5173
 ```
 
 ## 👨‍💻 Autor
 
-<img style="border-radius: 50%;" src="https://github.com/kreitmaier.png" width="100px;" alt=""/>
- <br />
- <sub><b>Douglas Kreitmaier</b></sub>
+| <img src="https://github.com/kreitmaier.png" width="100px;" alt=""/><br><sub><b>Douglas Kreitmaier</b></sub>   |
+| :---: | 
 
-Desenvolvido por Douglas Kreitmaier 👋 
-Fique à vontade para entrar em contato!
+<p>👋 Fique à vontade para entrar em contato! </p>
 
-[![Linkedin Badge](https://img.shields.io/badge/-Douglas-blue?style=flat-square&logo=Linkedin&logoColor=white&link=www.linkedin.com/in/douglas-kreitmaier)](www.linkedin.com/in/douglas-kreitmaier/) 
-[![Gmail Badge](https://img.shields.io/badge/-douglasklopes@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:douglasklopes@gmail.com)](mailto:douglasklopes@gmail.com)
+[![Linkedin Badge](https://img.shields.io/badge/-Douglas-blue?style=flat-square&logo=Linkedin&logoColor=white&link=www.linkedin.com/in/douglas-kreitmaier)](www.linkedin.com/in/douglas-kreitmaier/) <br> [![Gmail Badge](https://img.shields.io/badge/-douglasklopes@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:douglasklopes@gmail.com)](mailto:douglasklopes@gmail.com)
+
