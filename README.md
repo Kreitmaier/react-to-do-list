@@ -7,7 +7,7 @@
 
 ![preview](./src/assets/react-to-do-list.gif)
 <p align="center">
-🔗<a href="kreitmaier.github.io/react-to-do-list/">Acesse o projeto clicando aqui</a>
+🔗<a href="https://kreitmaier.github.io/react-to-do-list/">Acesse o projeto clicando aqui</a>
 </p>
 
 <p align="center">
