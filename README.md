@@ -17,15 +17,7 @@
  <a href="#"><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/kreitmaier/react-to-do-list" /></a>  
  <a href="https://github.com/Kreitmaier/react-to-do-list/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/kreitmaier/react-to-do-list" /></a>  
 </p>
-
-<p align="center">
- <a href="#💻-sobre-o-projeto">Sobre o projeto</a> •
- <a href="#🎨-layout">Layout</a> • 
- <a href="#🛠-tecnologias">Tecnologias</a> • 
- <a href="#🚀-como-executar-o-projeto">Como executar o projeto</a> • 
- <a href="#👨‍💻-autor">Autor</a>
-</p>	
-    
+	    
 ## 💻 Sobre o projeto
 Desafio realizado com o intuito de testar os conceitos fundamentais do React que foram adquiridos durante o primeiro módulo do curso de [React](https://lp.rocketseat.com.br/ignite) da [Rocketseat](https://www.rocketseat.com.br/). 
 
@@ -102,5 +94,5 @@ $ npm run dev
 
 <p>👋 Fique à vontade para entrar em contato! </p>
 
-[![Linkedin Badge](https://img.shields.io/badge/-Douglas-blue?style=flat-square&logo=Linkedin&logoColor=white&link=www.linkedin.com/in/douglas-kreitmaier)](www.linkedin.com/in/douglas-kreitmaier/) <br> [![Gmail Badge](https://img.shields.io/badge/-douglasklopes@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:douglasklopes@gmail.com)](mailto:douglasklopes@gmail.com)
+[![Linkedin Badge](https://img.shields.io/badge/-Douglas-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/douglas-kreitmaier)](https://www.linkedin.com/in/douglas-kreitmaier) <br> [![Gmail Badge](https://img.shields.io/badge/-douglasklopes@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:douglasklopes@gmail.com)](mailto:douglasklopes@gmail.com)
 
